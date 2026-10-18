@@ -1,0 +1,260 @@
+[
+  {
+    "doi": "10.1016/j.future.2017.02.014",
+    "title": "Exploiting smart e-Health gateways at the edge of healthcare Internet-of-Things: A fog computing approach",
+    "authors": [
+      "Amir M. Rahmani",
+      "Tuan Nguyen Gia",
+      "Behailu Negash",
+      "Arman Anzanpour",
+      "Iman Azimi",
+      "Mingzhe Jiang",
+      "Pasi Liljeberg"
+    ],
+    "year": 2018,
+    "venue": "Future Generation Computer Systems",
+    "volume": "78",
+    "pages": "641-658",
+    "abstract": ""
+  },
+  {
+    "doi": "10.1109/cit/iucc/dasc/picom.2015.51",
+    "title": "Fog Computing in Healthcare Internet of Things: A Case Study on ECG Feature Extraction",
+    "authors": [
+      "Tuan Nguyen Gia",
+      "Mingzhe Jiang",
+      "Amir-Mohammad Rahmani",
+      "Tomi Westerlund",
+      "Pasi Liljeberg",
+      "Hannu Tenhunen"
+    ],
+    "year": 2015,
+    "venue": "2015 IEEE International Conference on Computer and Information Technology; Ubiquitous Computing and Communications; Dependable, Autonomic and Secure Computing; Pervasive Intelligence and Computing",
+    "volume": "",
+    "pages": "356-363",
+    "abstract": ""
+  },
+  {
+    "doi": "10.1016/j.future.2019.10.043",
+    "title": "HealthFog: An ensemble deep learning based Smart Healthcare System for Automatic Diagnosis of Heart Diseases in integrated IoT and fog computing environments",
+    "authors": [
+      "Shreshth Tuli",
+      "Nipam Basumatary",
+      "Sukhpal Singh Gill",
+      "Mohsen Kahani",
+      "Rajesh Chand Arya",
+      "Gurpreet Singh Wander",
+      "Rajkumar Buyya"
+    ],
+    "year": 2020,
+    "venue": "Future Generation Computer Systems",
+    "volume": "104",
+    "pages": "187-200",
+    "abstract": "Abstract Cloud computing provides resources over the Internet and allows a plethora of applications to be deployed to provide services for different industries. The major bottleneck being faced currently in these cloud frameworks is their limited scalability and hence inability to cater to the requirements of centralized Internet of Things (IoT) based compute environments. The main reason for this is that latency-sensitive applications like health monitoring and surveillance systems now require computation over large amounts of data (Big Data) transferred to centralized database and from database to cloud data centers which leads to drop in performance of such systems. The new paradigms of fog and edge computing provide innovative solutions by bringing resources closer to the user and provide low latency and energy efficient solutions for data processing compared to cloud domains. Still, the current fog models have many limitations and focus from a limited perspective on either accuracy of results or reduced response time but not both. We proposed a novel framework called HealthFog for integrating ensemble deep learning in Edge computing devices and deployed it for a real-life application of automatic Heart Disease analysis. HealthFog delivers healthcare as a fog service using IoT devices and efficiently manages the data of heart patients, which comes as user requests. Fog-enabled cloud framework, FogBus is used to deploy and test the performance of the proposed model in terms of power consumption, network bandwidth, latency, jitter, accuracy and execution time. HealthFog is configurable to various operation modes which provide the best Quality of Service or prediction accuracy, as required, in diverse fog computation scenarios and for different user requirements."
+  },
+  {
+    "doi": "10.1016/j.future.2018.07.049",
+    "title": "Enabling technologies for fog computing in healthcare IoT systems",
+    "authors": [
+      "Ammar Awad Mutlag",
+      "Mohd Khanapi Abd Ghani",
+      "N. Arunkumar",
+      "Mazin Abed Mohammed",
+      "Othman Mohd"
+    ],
+    "year": 2019,
+    "venue": "Future Generation Computer Systems",
+    "volume": "90",
+    "pages": "62-78",
+    "abstract": "",
+    "s2_error": "HTTP Error 429: "
+  },
+  {
+    "doi": "10.1016/j.iot.2020.100181",
+    "title": "FogIoHT: A weighted majority game theory based energy-efficient delay-sensitive fog network for internet of health things",
+    "authors": [
+      "Anwesha Mukherjee",
+      "Debashis De",
+      "Soumya K. Ghosh"
+    ],
+    "year": 2020,
+    "venue": "Internet of Things",
+    "volume": "11",
+    "pages": "100181",
+    "abstract": "Abstract Internet of Health Things (IoHT) has become a demanding application of Internet of Things and cloud computing. In IoHT, the exchange and processing of health data are performed for monitoring the health status of patients. The health data collected using a body area network are stored and processed inside the cloud servers. The users can access the health data using their mobile devices as well as can receive health care advice. To reduce energy consumption and delay over the remote cloud servers, fog computing has been introduced. The health care system using fog computing is emerging due to the increasing need of energy and latency optimized health service provisioning. This article focuses on fog based Internet of Health Things for indoor as well as outdoor scenarios. In the proposed system the weighted majority game theory is used for selecting fog device in indoor and outdoor regions. Simulation results demonstrate that the proposed fog computing based system reduces the average delay, average jitter and energy consumption by approximately 15%, 20% and 15% respectively than the existing cloud only health care system."
+  },
+  {
+    "doi": "10.1109/access.2018.2866491",
+    "title": "Fog Computing: Survey of Trends, Architectures, Requirements, and Research Directions",
+    "authors": [
+      "Ranesh Kumar Naha",
+      "Saurabh Garg",
+      "Dimitrios Georgakopoulos",
+      "Prem Prakash Jayaraman",
+      "Longxiang Gao",
+      "Yong Xiang",
+      "Rajiv Ranjan"
+    ],
+    "year": 2018,
+    "venue": "IEEE Access",
+    "volume": "6",
+    "pages": "47980-48009",
+    "abstract": "",
+    "s2_error": "HTTP Error 429: "
+  },
+  {
+    "doi": "10.1002/spe.2509",
+    "title": "iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments",
+    "authors": [
+      "Harshit Gupta",
+      "Amir Vahid Dastjerdi",
+      "Soumya K. Ghosh",
+      "Rajkumar Buyya"
+    ],
+    "year": 2017,
+    "venue": "Software: Practice and Experience",
+    "volume": "47",
+    "pages": "1275-1296",
+    "abstract": "Internet of Things (IoT) aims to bring every object (eg, smart cameras, wearable, environmental sensors, home appliances, and vehicles) online, hence generating massive volume of data that can overwhelm storage systems and data analytics applications. Cloud computing offers services at the infrastructure level that can scale to IoT storage and processing requirements. However, there are applications such as health monitoring and emergency response that require low latency, and delay that is caused by transferring data to the cloud and then back to the application can seriously impact their performances. To overcome this limitation, Fog computing paradigm has been proposed, where cloud services are extended to the edge of the network to decrease the latency and network congestion. To realize the full potential of Fog and IoT paradigms for real‐time analytics, several challenges need to be addressed. The first and most critical problem is designing resource management techniques that determine which modules of analytics applications are pushed to each edge device to minimize the latency and maximize the throughput. To this end, we need an evaluation platform that enables the quantification of performance of resource management policies on an IoT or Fog computing infrastructure in a repeatable manner. In this paper we propose a simulator, called iFogSim, to model IoT and Fog environments and measure the impact of resource management techniques in latency, network congestion, energy consumption, and cost. We describe two case studies to demonstrate modeling of an IoT environment and comparison of resource management policies. Moreover, scalability of the simulation toolkit of RAM consumption and execution time is verified under different circumstances."
+  },
+  {
+    "doi": "10.1016/j.jss.2022.111351",
+    "title": "iFogSim2: An extended iFogSim simulator for mobility, clustering, and microservice management in edge and fog computing environments",
+    "authors": [
+      "Redowan Mahmud",
+      "Samodha Pallewatta",
+      "Mohammad Goudarzi",
+      "Rajkumar Buyya"
+    ],
+    "year": 2022,
+    "venue": "Journal of Systems and Software",
+    "volume": "190",
+    "pages": "111351",
+    "abstract": "",
+    "s2_error": "HTTP Error 429: "
+  },
+  {
+    "doi": "10.1109/mc.2016.245",
+    "title": "Fog Computing: Helping the Internet of Things Realize Its Potential",
+    "authors": [
+      "Amir Vahid Dastjerdi",
+      "Rajkumar Buyya"
+    ],
+    "year": 2016,
+    "venue": "Computer",
+    "volume": "49",
+    "pages": "112-116",
+    "abstract": ""
+  },
+  {
+    "doi": "10.1049/iet-net.2015.0034",
+    "title": "Theoretical modelling of fog computing: a green computing paradigm to support IoT applications",
+    "authors": [
+      "Subhadeep Sarkar",
+      "Sudip Misra"
+    ],
+    "year": 2016,
+    "venue": "IET Networks",
+    "volume": "5",
+    "pages": "23-29",
+    "abstract": ""
+  },
+  {
+    "doi": "10.1016/j.sysarc.2020.101778",
+    "title": "Task allocation algorithm and optimization model on edge collaboration",
+    "authors": [
+      "Xiaoheng Deng",
+      "Jun Li",
+      "Enlu Liu",
+      "Honggang Zhang"
+    ],
+    "year": 2020,
+    "venue": "Journal of Systems Architecture",
+    "volume": "110",
+    "pages": "101778",
+    "abstract": "Abstract This paper investigates a mobile edge computing environment for video analysis tasks where edge nodes provide their computation capacities to process the computation intensive tasks submitted by end users. First, we introduce a Cloudlet Assisted Cooperative Task Assignment (CACTA) system that organizes edge nodes that are geographically close to an end user into a cluster to collaboratively work on the user’s tasks. It is challenging for the system to find an optimal strategy that assigns workload to edge nodes to meet the user’s optimization goal. To address the challenge, this paper proposes multiple algorithms for different situations. Firstly, considering the situation that historical data cannot be obtained, a multi-round allocation algorithm based on EMA prediction is proposed, and the experimental results prove the efficiency and necessity of multiple rounds of transmission. To address the second case of obtaining historical data, this paper introduces a prediction-based dynamic task assignment algorithm that assigns workload to edge nodes in each time slot based on the prediction of their capacities/costs and an empirical optimal allocation strategy which is learned from an offline optimal solution from historical data. Experimental results demonstrate that our proposed algorithm achieves significantly higher performance than several other algorithms, and especially its performance is very close to that of an offline optimal solution. Finally, we propose an online task assignment algorithm based on Q-learning, which uses the model-free Q-learning algorithm to actively learn the allocation strategy of the system, and the experimental results verify the superiority and effectiveness of this algorithm."
+  },
+  {
+    "doi": "10.3390/s22197326",
+    "title": "Latency-Aware Task Scheduling for IoT Applications Based on Artificial Intelligence with Partitioning in Small-Scale Fog Computing Environments",
+    "authors": [
+      "JongBeom Lim"
+    ],
+    "year": 2022,
+    "venue": "Sensors",
+    "volume": "22",
+    "pages": "7326",
+    "abstract": "",
+    "s2_error": "HTTP Error 429: "
+  },
+  {
+    "doi": "10.1007/s10586-023-03982-3",
+    "title": "A taxonomy of load balancing algorithms and approaches in fog computing: a survey",
+    "authors": [
+      "Sepideh Ebneyousef",
+      "Alireza Shirmarz"
+    ],
+    "year": 2023,
+    "venue": "Cluster Computing",
+    "volume": "26",
+    "pages": "3187-3208",
+    "abstract": ""
+  },
+  {
+    "doi": "10.1109/access.2019.2908263",
+    "title": "Mobility-Aware Task Offloading and Migration Schemes in Fog Computing Networks",
+    "authors": [
+      "Dongyu Wang",
+      "Zhaolin Liu",
+      "Xiaoxiang Wang",
+      "Yanwen Lan"
+    ],
+    "year": 2019,
+    "venue": "IEEE Access",
+    "volume": "7",
+    "pages": "43356-43368",
+    "abstract": "Fog computing is an extension of cloud computing, which emphasizes distributed computing and provides computing service closer to user equipments (UEs). However, due to the limited service coverage of fog computing nodes (FCNs), the moving users may be out of the coverage, which would cause the radio handover and execution results migration when the tasks are off-loaded to FCNs. Furthermore, extra cost, including energy consumption and latency, is generated and affects the revenue of UEs. Previous works rarely consider the mobility of UEs in fog computing networks. In this paper, a generic three-layer fog computing networks architecture is considered, and the mobility of UEs is characterized by the sojourn time in each coverage of FCNs, which follows the exponential distribution. To maximize the revenue of UEs, the off-loading decisions and computation resource allocation are jointly optimized to reduce the probability of migration. The problem is modeled as a mixed integer nonlinear programming (MINLP) problem, which is NP-hard. The problem is divided into two parts: tasks off-loading and resource allocation. A Gini coefficient-based FCNs selection algorithm (GCFSA) is proposed to get a sub-optimal off-loading strategy, and a distributed resource optimization algorithm based on genetic algorithm (ROAGA) is implemented to solve the computation resource allocation problem. The proposed algorithms can handle the scenario of UEs’ mobility in fog computing networks by significantly reducing the probability of migration. Simulations demonstrate that the proposed algorithms can achieve quasi-optimal revenue performance compared with other baseline algorithms."
+  },
+  {
+    "doi": "10.1016/j.suscom.2024.100988",
+    "title": "ETFC: Energy-efficient and deadline-aware task scheduling in fog computing",
+    "authors": [
+      "Amir Pakmehr",
+      "Majid Gholipour",
+      "Esmaeil Zeinali"
+    ],
+    "year": 2024,
+    "venue": "Sustainable Computing: Informatics and Systems",
+    "volume": "43",
+    "pages": "100988",
+    "abstract": ""
+  },
+  {
+    "doi": "10.1007/s00607-022-01108-y",
+    "title": "Energy-efficient scheduling based on task prioritization in mobile fog computing",
+    "authors": [
+      "Entesar Hosseini",
+      "Mohsen Nickray",
+      "Shamsollah Ghanbari"
+    ],
+    "year": 2022,
+    "venue": "Computing",
+    "volume": "105",
+    "pages": "187-215",
+    "abstract": ""
+  },
+  {
+    "doi": "10.1109/aca52198.2021.9626783",
+    "title": "Survey on Load balancing in fog computing in smart healthcare system",
+    "authors": [
+      "Hayder Makki Shakir",
+      "Jaber Karimpour"
+    ],
+    "year": 2021,
+    "venue": "2021 International Conference on Advanced Computer Applications (ACA)",
+    "volume": "",
+    "pages": "128-131",
+    "abstract": "",
+    "s2_error": "HTTP Error 429: "
+  }
+]

@@ -598,8 +598,8 @@ with evidence_tab:
             ("6", "Architecture and workflow documentation", "1e1dbaf", "Complete"),
             ("7", "README and quickstart", "99c72bc", "Complete"),
             ("8", "Experiment suite and figures", "9194eb4", "Complete"),
-            ("9", "Interactive dashboard", file_commit("dashboard/app.py"), "Complete"),
-            ("10", "Literature survey and evaluation docs", "—", "In progress"),
+            ("9", "Interactive dashboard", "0d29696", "Complete"),
+            ("10", "Literature survey and evaluation docs", file_commit("docs/literature_survey.md"), "Complete"),
         ],
         columns=["#", "Stage", "Commit", "Status"],
     )
