@@ -200,6 +200,7 @@ it. Stop the server with `Ctrl + C`.
 - [Literature survey](docs/literature_survey.md) — 17 verified papers and gap analysis
 - [Evaluation design and results](docs/evaluation.md)
 - [Fog vs cloud trade-offs](docs/tradeoffs.md)
+- [Screenshot and evidence checklist](docs/evidence.md)
 - [BibTeX references](docs/references.bib)
 
 ---
