@@ -5,3 +5,5 @@ __pycache__/
 .streamlit/secrets.toml
 results/tasks_*.csv
 *.log
+.vscode/
+results_quick/

@@ -55,9 +55,9 @@ class MetricsCollector:
             return _mean(values), _pct(values, 95), tcr_c
 
         crit_mean, crit_p95, crit_tcr = class_metrics("critical")
-        int_mean, int_p95, _ = class_metrics("interactive")
-        img_mean, img_p95, _ = class_metrics("imaging")
-        bat_mean, bat_p95, _ = class_metrics("batch")
+        int_mean, int_p95, int_tcr = class_metrics("interactive")
+        img_mean, img_p95, img_tcr = class_metrics("imaging")
+        bat_mean, bat_p95, bat_tcr = class_metrics("batch")
 
         fog_energy = sum(node_energy(n, self.window_s, n.busy_time_window) for n in fog_nodes)
         cloud_energy = sum(node_energy(n, self.window_s, n.busy_time_window) for n in cloud_nodes)
@@ -99,10 +99,13 @@ class MetricsCollector:
             "critical_tcr_pct": crit_tcr,
             "interactive_mean_ms": 1000.0 * int_mean,
             "interactive_p95_ms": 1000.0 * int_p95,
+            "interactive_tcr_pct": int_tcr,
             "imaging_mean_ms": 1000.0 * img_mean,
             "imaging_p95_ms": 1000.0 * img_p95,
+            "imaging_tcr_pct": img_tcr,
             "batch_mean_ms": 1000.0 * bat_mean,
             "batch_p95_ms": 1000.0 * bat_p95,
+            "batch_tcr_pct": bat_tcr,
             "throughput_tps": completed_n / self.window_s,
             "energy_j": total_energy,
             "energy_per_task_j": total_energy / completed_n if completed_n else 0.0,

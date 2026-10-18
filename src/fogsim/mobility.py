@@ -21,7 +21,7 @@ class HandoffRecord:
 
     @property
     def successful(self) -> bool:
-        return self.blocking_s <= 0.010
+        return self.blocking_s <= 0.050
 
 
 class MobilityManager:

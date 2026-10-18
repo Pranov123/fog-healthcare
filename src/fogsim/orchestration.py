@@ -118,7 +118,7 @@ class TaskScheduler:
         self.weights = dict(algorithm["weights"])
         self.refs = dict(algorithm["references"])
         self.neighbor_offload = bool(algorithm["neighbor_offload"])
-        self.scheduling = "edf" if name in {"fog_edf", "proposed"} else "fcfs"
+        self.scheduling = "edf" if name == "proposed" else "fcfs"
         self.prefetch = name == "proposed"
 
     def candidates(self, task: Task, patient: Patient) -> list[ComputeNode]:

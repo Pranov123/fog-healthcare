@@ -33,7 +33,7 @@ topology:
 workload:
   num_patients: 100
   load_multiplier: 1.0
-  context_kb: 4096
+  context_kb: 16384
   classes:
     critical:
       rate_per_patient: 0.05
