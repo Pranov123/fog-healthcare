@@ -9,10 +9,10 @@ topology:
     cpu_mcycles_per_s: 5000
     cores: 8
     mem_mb: 8192
-    p_idle_w: 35
-    p_busy_w: 110
+    p_idle_w: 10
+    p_busy_w: 65
   cloud:
-    cpu_mcycles_per_s: 100000
+    cpu_mcycles_per_s: 500000
     cores: 64
     mem_mb: 262144
     p_idle_w: 0
@@ -25,7 +25,7 @@ topology:
     fog_to_fog_latency_ms: 3
     fog_to_fog_energy_j_per_mb: 0.8
     fog_to_cloud_mbps: 200
-    fog_to_cloud_latency_ms: 20
+    fog_to_cloud_latency_ms: 40
     fog_to_cloud_energy_j_per_mb: 1.0
   edge:
     processing_latency_ms: 1.0
@@ -36,28 +36,28 @@ workload:
   context_kb: 4096
   classes:
     critical:
-      rate_per_patient: 0.02
+      rate_per_patient: 0.05
       size_kb: 5
       cycles_mcycles: 30
       deadline_ms: 50
       rank: 0
       offloadable: true
     interactive:
-      rate_per_patient: 0.05
+      rate_per_patient: 0.5
       size_kb: 50
       cycles_mcycles: 150
       deadline_ms: 300
       rank: 1
       offloadable: true
     imaging:
-      rate_per_patient: 0.0005
+      rate_per_patient: 0.002
       size_kb: 50000
       cycles_mcycles: 15000
       deadline_ms: 20000
       rank: 2
       offloadable: true
     batch:
-      rate_per_patient: 0.005
+      rate_per_patient: 0.01
       size_kb: 2000
       cycles_mcycles: 2000
       deadline_ms: 120000

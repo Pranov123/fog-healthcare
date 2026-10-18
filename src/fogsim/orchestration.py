@@ -37,11 +37,15 @@ class ResourceManager:
         return node.pending_cycles / (node.speed_mcycles * max(1, node.cores))
 
     def estimate(self, task: Task, patient: Patient, node: ComputeNode) -> NodeEstimate:
-        tx_s = self.topology.path_delay(patient.zone, node, task.size_kb)
+        links = self.topology.path(patient.zone, node)
+        tx_s = self.topology.edge_processing_s + sum(
+            link.tx_time(task.size_kb) + link.queue_delay() for link in links
+        )
         queue_s = self.queue_delay(node)
         exec_s = task.cycles / node.speed_mcycles
+        local = self.topology.fogs[patient.zone % self.topology.num_fog]
         mobility_s = 0.0
-        if node.kind == "fog" and patient.last_node >= 0 and patient.last_node != node.node_id:
+        if node.kind == "fog" and node.node_id != local.node_id:
             mobility_s = self.context_penalty_s
         energy_j = exec_s * node.p_busy_w + self.topology.path_energy(patient.zone, node, task.size_kb)
         return NodeEstimate(node, tx_s, exec_s, queue_s, mobility_s, energy_j)

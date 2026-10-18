@@ -29,7 +29,7 @@ def test_node_energy_model():
     env = simpy.Environment()
     topo = Topology(env, cfg)
     fog = topo.fogs[0]
-    # half utilization for 100 s: 35 W idle + 75 W * 0.5 = 72.5 W average
-    assert node_energy(fog, 100.0, fog.cores * 50.0) == pytest.approx(7250.0)
+    # half utilization for 100 s: 10 W idle + 55 W * 0.5 = 37.5 W average
+    assert node_energy(fog, 100.0, fog.cores * 50.0) == pytest.approx(3750.0)
     cloud = topo.cloud
     assert node_energy(cloud, 100.0, cloud.cores * 50.0) == pytest.approx(13000.0)

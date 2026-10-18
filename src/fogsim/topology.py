@@ -23,11 +23,20 @@ class Link:
         self.latency_ms = float(latency_ms)
         self.energy_j_per_mb = float(energy_j_per_mb)
         self.resource = simpy.Resource(env, capacity=parallel)
+        self.parallel = parallel
+        self.pending_s = 0.0
         self.bytes_sent = 0.0
         self.transmissions = 0
 
+    def serialization_time(self, size_kb: float) -> float:
+        return size_kb * 8.0 / 1000.0 / self.bandwidth_mbps
+
+    def queue_delay(self) -> float:
+        """Approximate waiting time from work already queued on the link."""
+        return self.pending_s / max(1, self.parallel)
+
     def tx_time(self, size_kb: float) -> float:
-        return size_kb * 8.0 / 1000.0 / self.bandwidth_mbps + self.latency_ms / 1000.0
+        return self.serialization_time(size_kb) + self.latency_ms / 1000.0
 
     def energy(self, size_kb: float) -> float:
         return size_kb / 1024.0 * self.energy_j_per_mb

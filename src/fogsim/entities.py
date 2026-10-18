@@ -74,6 +74,7 @@ class ComputeNode:
     p_busy_w: float
     pending_cycles: float = 0.0
     busy_time: float = 0.0
+    busy_time_window: float = 0.0
     tasks_started: int = 0
     completed: int = 0
 
