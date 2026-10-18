@@ -1,0 +1,85 @@
+simulation:
+  duration_s: 600
+  warmup_s: 60
+  seed: 42
+
+topology:
+  num_fog_nodes: 5
+  fog:
+    cpu_mcycles_per_s: 5000
+    cores: 8
+    mem_mb: 8192
+    p_idle_w: 35
+    p_busy_w: 110
+  cloud:
+    cpu_mcycles_per_s: 100000
+    cores: 64
+    mem_mb: 262144
+    p_idle_w: 0
+    p_busy_w: 260
+  links:
+    edge_to_fog_mbps: 400
+    edge_to_fog_latency_ms: 2
+    edge_to_fog_energy_j_per_mb: 1.2
+    fog_to_fog_mbps: 1000
+    fog_to_fog_latency_ms: 3
+    fog_to_fog_energy_j_per_mb: 0.8
+    fog_to_cloud_mbps: 200
+    fog_to_cloud_latency_ms: 20
+    fog_to_cloud_energy_j_per_mb: 1.0
+  edge:
+    processing_latency_ms: 1.0
+
+workload:
+  num_patients: 100
+  load_multiplier: 1.0
+  context_kb: 4096
+  classes:
+    critical:
+      rate_per_patient: 0.02
+      size_kb: 5
+      cycles_mcycles: 30
+      deadline_ms: 50
+      rank: 0
+      offloadable: true
+    interactive:
+      rate_per_patient: 0.05
+      size_kb: 50
+      cycles_mcycles: 150
+      deadline_ms: 300
+      rank: 1
+      offloadable: true
+    imaging:
+      rate_per_patient: 0.0005
+      size_kb: 50000
+      cycles_mcycles: 15000
+      deadline_ms: 20000
+      rank: 2
+      offloadable: true
+    batch:
+      rate_per_patient: 0.005
+      size_kb: 2000
+      cycles_mcycles: 2000
+      deadline_ms: 120000
+      rank: 3
+      offloadable: true
+
+mobility:
+  enabled: true
+  mean_dwell_s: 120
+  handoff_prefetch: true
+
+algorithm:
+  name: proposed
+  deadline_safety_factor: 0.9
+  neighbor_offload: true
+  weights:
+    latency: 0.45
+    energy: 0.20
+    load: 0.25
+    mobility: 0.10
+  references:
+    latency_s: 0.05
+    energy_j: 50
+    load_s: 0.5
+    mobility_s: 0.05
